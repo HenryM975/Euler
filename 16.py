@@ -1,3 +1,4 @@
+#16
 while True:
     print("a^n")
     try:
