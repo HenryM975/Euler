@@ -1,16 +1,14 @@
 #3
 final_num = int(input("write final num: "))
-divider_list = []
-list_of_prime_factors = []
+list_of_prime_factors = [1]
 full_list = []
-for num in range(1, final_num):
-    #full_list.append(num)
+for num in range(2, final_num):
     if final_num % num == 0:
-        divider_list.append(num)
-        """
-            for num2 in range(1, num-1):
-                if num % num2 != 0:
-                    list_of_prime_factors.append(num)
+        rubbish_list = []
+        for num2 in full_list:
+            if num % num2 == 0:
+                rubbish_list.append(num2)
+        if rubbish_list == []:
+            list_of_prime_factors.append(num)
+    full_list.append(num)
 print(list_of_prime_factors)
-"""
-print(divider_list)
