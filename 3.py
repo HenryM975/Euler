@@ -12,3 +12,4 @@ for num in range(2, final_num):
             list_of_prime_factors.append(num)
     full_list.append(num)
 print(list_of_prime_factors)
+#gtyvtyivbyitukloooooooooooooooooooooooooooooooofvtrffdcerdxcerutyfc
