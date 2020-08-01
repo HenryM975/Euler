@@ -5,4 +5,4 @@ for num in range(1,1000):
     #list = fraction.split(".")
     print("--------")
     #print(list)
-    print(fraction)
+    print(fraction)##E0FFFF
