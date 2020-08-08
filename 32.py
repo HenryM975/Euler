@@ -5,7 +5,6 @@ for num in range(30):
     lenlist = len(numlist)
     numlist.sort()
     print(numlist)
-    print(lenlist)
     checklist = []
     for numpart in range(1, lenlist+1):
         checklist.append(str(numpart))
