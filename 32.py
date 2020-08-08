@@ -1,16 +1,19 @@
 #32
 finallist = []
-for num in range(10000):
+for num in range(30):
     numlist = list(str(num))
     lenlist = len(numlist)
+    numlist.sort()
     print(numlist)
     print(lenlist)
     checklist = []
-    for numpart in range(num):
-        numpart = str(numpart)
-        if numpart in numlist:
+    for numpart in range(1, lenlist+1):
+        checklist.append(str(numpart))
+    print(checklist)
+    print("-------")
+    checklist.sort()
+    if checklist == numlist:
             finallist.append(num)
 print(finallist)
     
         
-    
