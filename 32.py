@@ -15,9 +15,11 @@ for num in range(100000):
             finallist.append(num)
 print(finallist)
 #?
+flist = []
 for first in range(1, 100):
     for second in range(1, 200):
         for third in range(1, 10000):
+            part_of_flist = []
             split_list = []
             if first * second == third:
                 split_list.append(first)
@@ -40,12 +42,17 @@ for first in range(1, 100):
                     list_of_len_sf_list.append(len_element_part)
                 #print(sorted_int_sf_list)
                 #print(list_of_len_sf_list)
-                print("-----------------")
+                #print("-----------------")
                 if sorted_int_sf_list == list_of_len_sf_list:
                     print(first)
                     print(second)
                     print(third)
                     print("+++++++++++")
+                    part_of_flist.append(first)
+                    part_of_flist.append(second)
+                    part_of_flist.append(third)
+                    flist.append(part_of_flist)
+print(flist)
 
 
 
