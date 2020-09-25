@@ -12,7 +12,17 @@ for nim in range(1000000):
 print("pn:")
 print(pun_numeral_list)
 print(sorted(temporary_list))
-    
+for part in pun_numeral_list:
+    second_temporary_list = []
+    for num_part in str(part):
+        second_temporary_list.append(num_part)
+    print(second_temporary_list)
+    print("----------------------")
+    left_border = 0
+    right_border = 3
+    dnum = second_temporary_list[left_border:right_border]
+    print(dnum)
+
 
     
 
