@@ -20,8 +20,17 @@ for part in pun_numeral_list:
     print("----------------------")
     left_border = 0
     right_border = 3
-    dnum = second_temporary_list[left_border:right_border]
-    print(dnum)
+    while True:
+        dnum = second_temporary_list[left_border:right_border]
+        print(len(second_temporary_list))
+        print(dnum)
+        if right_border == len(second_temporary_list):
+            break
+        print(full_num_from_list)
+            
+        left_border += 1
+        right_border += 1
+
 
 
     
